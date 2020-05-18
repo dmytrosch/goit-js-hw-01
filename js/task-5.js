@@ -1,7 +1,7 @@
 let country = prompt("Введите страну");
 let deliveryPrice;
-let canDeliver = true;
-country = country.toLowerCase;
+let canDeliver;
+country = country.toLowerCase();
 
 switch (country) {
   case "китай":
@@ -26,9 +26,8 @@ switch (country) {
 
   default:
     alert("В вашей стране доставка не доступна");
-    canDeliver = false;
+    canDeliver = false;    
 }
-
-if (canDeliver = true) {
+if (canDeliver != false) {
   alert(`Доставка в ${country} будет стоить ${deliveryPrice} кредитов`);
 }
